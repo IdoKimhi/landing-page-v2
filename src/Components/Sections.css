@@ -1,0 +1,78 @@
+:root {
+    --textwhite: #f9faf8;
+    --darkgrey: #1f2937;
+    --lightgrey: #e5e7eb;
+    --lightblue: #3882f6;
+    --lightbluehover: #266bdb;
+    --textgrey: #f9faf8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.text-white {
+    color: var(--textwhite);
+}
+
+.navbar-wrapper {
+    color: var(--textwhite);
+    background-color: var(--darkgrey);
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1vh;
+}
+.navbar-logo {
+    margin-bottom: 7px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-shrink: 0;
+    gap: 15px;
+    color: var(--textgrey);
+}
+
+.navbar-links > li:hover {
+    color: var(--lightblue);
+    cursor:pointer;
+}
+
+.hero-wrapper {
+    background-color: var(--darkgrey);
+    padding: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*img {
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+
+}*/
+
+.sign-up {
+    color: var(--textwhite);
+    background-color: var(--lightblue);
+    width: 95px;
+    height: 30px;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    margin-bottom: 0;
+
+}
+.sign-up:hover{
+    background-color:var(--lightbluehover);
+    transition: 300ms;
+}
+
